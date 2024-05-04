@@ -8,7 +8,7 @@ import thirdImg from '../../assets/images/main/3.png';
 
 function Main() {
     return (
-        <div className={styles.content}>
+        <div className={styles.background}>
             <Carousel className="carousel-dark">
                 <Carousel.Item>
                     <div className={`row ${styles.itemWrap}`}>
