@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './Navbar.module.css';
 
@@ -6,21 +7,26 @@ import { Button } from 'react-bootstrap';
 import { ReactComponent as LogoImg } from '../../assets/images/header/callog3-white-col.svg';
 
 function Navbar() {
+
+    const navigate = useNavigate();
+
     return (
         <div className={`${styles.navBar} text-white d-flex`} >
-            <Link to="/" id={styles.logoLink}>
-                <LogoImg />
-            </Link>
-            <Button variant style={{marginLeft: 'auto', backgroundColor: '#28242c'}}>
-                <Link to="/login" className={`${styles.navLink}`}>
-                    로그인
-                </Link>
+            <div id={styles.logoImg}>
+                <LogoImg onClick={() => navigate('/')}/>
+            </div>
+            <Button variant
+                className={`${styles.navLink}`}
+                onClick={() => navigate('/login')}
+                style={{marginLeft: 'auto', backgroundColor: '#28242c'}}>
+                로그인
             </Button>
             &nbsp;
-            <Button variant style={{backgroundColor: '#28242c'}}>
-                <Link to="/signup" className={`${styles.navLink}`}>
-                    회원가입
-                </Link>
+            <Button variant
+                className={`${styles.navLink}`}
+                onClick={() => navigate('/signup')}
+                style={{backgroundColor: '#28242c'}}>
+                회원가입
             </Button>
         </div>
     );

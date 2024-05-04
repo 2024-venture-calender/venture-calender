@@ -26,8 +26,12 @@
     font-size: 15px;
 }
 
+.captionButton {
+    font-size: 15px;
+}
+
 .itemImg > img, .itemImg > svg {
-    width: 450px;
+    max-width: 450px;
     height: auto;
 }
 
@@ -37,7 +41,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 
     .captionTitle {
         font-size: 26px;
@@ -48,29 +52,31 @@
     }
 
     .itemImg > img, .itemImg > svg {
-        width: 400px;
+        max-width: 400px;
         height: auto;
     }
 }
 
-@media (max-width: 767px) {
-
-    .itemWrap {
-        padding: 10% 10% 0 10%;
-        overflow: scroll;
-    }
-
-    .itemImg {
-        margin: 5% 0;
-        align-items: center;
-    }
+@media (max-width: 768px) {
 
     .itemImg > img, .itemImg > svg {
         min-width: 250px;
-        max-width: 100%;
         max-height: 300px;
-
-        width: auto;
     }
 
+    .firstButton {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .itemWrap {
+        padding: 10% 10% 10% 10%;
+    }
+
+    .itemImg {
+        align-items: center;
+    }
 }
