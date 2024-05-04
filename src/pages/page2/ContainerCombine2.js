@@ -6,14 +6,14 @@ import Container from './Listcontainer2';
 function ContainerCombine(){
 
     return(
-        <>
+        <div>
             <Line />
             <Content />
             <Line />
             <Buttons />
             <Line />
             <Container />
-        </>
+        </div>
     );
 }
 
