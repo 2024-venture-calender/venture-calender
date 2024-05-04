@@ -1,5 +1,5 @@
 {
-  "name": "venture-calender",
+  "name": "app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,9 +10,6 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.76.0",
-    "styled-components": "^6.1.9",
-    "styled-reset": "^4.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,10 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "prettier": "^3.2.5"
   }
 }
