@@ -1,20 +1,3 @@
-<<<<<<< Updated upstream
-// src/Router.js
-
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './pages/Main/Main';
-
-const Router = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/main" element={<Main />} />
-            </Routes>
-        </BrowserRouter>
-    );
-};
-=======
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; // BrowserRouter 없이 Routes와 Route 사용
 import Header from './components/ListHeader';
@@ -36,6 +19,5 @@ const Router = () => (
         <Footer />
     </div>
 );
->>>>>>> Stashed changes
 
 export default Router;
