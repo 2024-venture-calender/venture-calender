@@ -1,11 +1,11 @@
 import React from 'react';
-import FullCalendar from '@fullcalendar/react'; // FullCalendar 컴포넌트
-import dayGridPlugin from '@fullcalendar/daygrid'; // 달력 형태
-import interactionPlugin from '@fullcalendar/interaction'; // 클릭 이벤트
-import { useNavigate } from 'react-router-dom'; // useNavigate 사용
+import FullCalendar from '@fullcalendar/react'; 
+import dayGridPlugin from '@fullcalendar/daygrid'; 
+import interactionPlugin from '@fullcalendar/interaction'; 
+import { useNavigate } from 'react-router-dom'; 
 
 function CalendarPage() {
-  const navigate = useNavigate(); // 페이지 전환을 위해 useNavigate 사용
+  const navigate = useNavigate(); 
 
   const handleEventClick = (clickInfo) => {
     const eventTitle = clickInfo.event.title;
@@ -29,7 +29,7 @@ function CalendarPage() {
           { title: '[유데미] 백엔드 개발자 취업 미니 부트캠프', start: '2024-05-20', end: '2024-06-21' },
           { title: '[슈코데이] ML 세미나', start: '2024-01-25' },
         ]}
-        eventClick={handleEventClick} // 이벤트 클릭 시 페이지 이동
+        eventClick={handleEventClick} 
       />
     </div>
   );
