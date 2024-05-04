@@ -11,13 +11,13 @@ function Navbar() {
             <Link to="/" id={styles.logoLink}>
                 <LogoImg />
             </Link>
-            <Button variant="outline-light" style={{marginLeft: 'auto', backgroundColor: '#28242c'}}>
+            <Button variant style={{marginLeft: 'auto', backgroundColor: '#28242c'}}>
                 <Link to="/login" className={`${styles.navLink}`}>
                     로그인
                 </Link>
             </Button>
             &nbsp;
-            <Button variant="outline-light" style={{backgroundColor: '#28242c'}}>
+            <Button variant style={{backgroundColor: '#28242c'}}>
                 <Link to="/signup" className={`${styles.navLink}`}>
                     회원가입
                 </Link>

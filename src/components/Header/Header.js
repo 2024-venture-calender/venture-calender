@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 
 function Header() {
     return (
-        <div className="py-2 bgColor1" style={{backgroundColor: '#D6ABFA'}}>
+        <div className="py-2" style={{backgroundColor: '#481677'}}>
             <Navbar />
         </div>
     );
