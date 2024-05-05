@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import './EventList.css';
 
 import goormthon from '../../assets/images/goormthon.png'
@@ -7,6 +8,9 @@ import woohyung from '../../assets/images/woohyung.jpg';
 import springboot from '../../assets/images/springboot.png'
 
 function EventList() {
+
+    const navigate = useNavigate();
+
     const [searchTerm, setSearchTerm] = useState('');
 
     const lists = [
@@ -45,9 +49,16 @@ function EventList() {
     };
 
     return (
-        <>
         <div className='body'>
             <div className='contents'>
+                <div className='buttonWrap'>
+                    <Button variant
+                        style={{backgroundColor: '#481677', color: 'white'}}
+                        onClick={() => navigate('/event/calendar')}
+                    >
+                        캘린더로 보기
+                    </Button>
+                </div>
                 <div className='search'>
                     {/* <div className='search-box'> */}
                         <input className='search-text' type='text' value={searchTerm} onChange={handleSearch} placeholder='검색어를 입력하세요.' />
@@ -78,7 +89,6 @@ function EventList() {
                 </div>
             </div>
         </div>
-        </>
     );
 }
 

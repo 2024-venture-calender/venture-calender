@@ -3,7 +3,8 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import './EventCalendar.css';
 
 const EventCalendar = () => {
@@ -16,6 +17,14 @@ const EventCalendar = () => {
 
     return (
         <div className="contentWrap container">
+            <div className='buttonWrap'>
+                <Button variant
+                    style={{backgroundColor: '#481677', color: 'white'}}
+                    onClick={() => navigate('/event/list')}
+                >
+                    목록으로 보기
+                </Button>
+            </div>
             <FullCalendar
                 plugins={[dayGridPlugin, interactionPlugin]}
                 initialView="dayGridMonth"

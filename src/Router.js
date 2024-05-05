@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Layout from './layouts/Layout';
 import Main from './pages/Main/Main';
-import EventCalendar from './pages/Calendar/EventCalendar';
+import EventCalendar from './pages/EventCalendar/EventCalendar';
 import EventList from './pages/EventList/EventList';
 import EventDetails from './pages/Events/EventDetails';
 

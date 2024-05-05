@@ -1,12 +1,18 @@
 /*  */
 .body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 .contents{
     /* display: flex; */
     /* justify-content: center; */
     margin: 0 auto;
+
+    padding: 10px 0 10px 0;
+}
+
+.buttonWrap {
+    margin-bottom: 10px;
 }
 
 /* 검색 */
