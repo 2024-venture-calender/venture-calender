@@ -72,7 +72,7 @@ function EventList() {
                 <div className="event-list">
                     {filteredLists.map((item, index) => (
                         /**/
-                        <Link to={`/detail/${item.eventCode}`} key={index}>
+                        <Link to={`/event/${item.eventCode}`} key={index}>
                             <div className="event-item">
                                 <div className='event-image-div'>
                                     <img className='event-image' src={item.image} alt={`이벤트 ${index + 1}`} />

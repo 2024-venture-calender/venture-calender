@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import ScrollToTop from './ScrollToTop';
 import Layout from './layouts/Layout';
 import Main from './pages/Main/Main';
 import EventCalendar from './pages/EventCalendar/EventCalendar';
@@ -10,7 +11,7 @@ import EventDetails from './pages/Events/EventDetails';
 const Router = () => {
     return (
         <BrowserRouter>
-            
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Main />}/>
