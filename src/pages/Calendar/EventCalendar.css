@@ -1,5 +1,8 @@
-.calendarWrap {
+.contentWrap {
   padding: 2% 10%;
+
+}
+.calendarWrap {
 }
 
 .fc {
@@ -17,4 +20,8 @@
 
 .fc-scrollgrid thead a {
   font-size: 17px;
+}
+
+.fc-scrollgrid .fc-event {
+  cursor: pointer;
 }

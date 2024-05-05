@@ -23,7 +23,7 @@ export function FirstButtons() {
             className={styles.firstButton}
             variant="outline-dark"
             style={{backgroundColor: '#28242c', color: 'white'}}
-            onClick={() => navigate('/calendar')}
+            onClick={() => navigate('/event')}
         >
             이벤트 둘러보기
         </Button>
