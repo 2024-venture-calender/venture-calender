@@ -15,8 +15,8 @@ const Router = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<Layout/>}>
-                    <Route index element={<ContainerCombine/>}/>
-                    <Route path="/content" element={<Main/>}/>
+                    <Route index element={<Main/>}/>
+                    <Route path="/content" element={<ContainerCombine/>}/>
                     <Route path="/content2" element={<ContainerCombine2/>}/>
                     <Route path="/content3" element={<ContainerCombine3/>}/>
                     
