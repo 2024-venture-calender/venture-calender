@@ -14,19 +14,21 @@ function Main() {
 
     return (
         <div className={styles.background}>
-            <Carousel className="carousel-dark">
+            <Carousel className="carousel-dark" interval={5000}>
                 <Carousel.Item>
                     <div className={`row ${styles.itemWrap}`}>
                         <div className={`col-sm ${styles.itemCaption}`}>
-                            <span className={styles.captionTitle}>
-                                IT 행사 참여 · 관리<br/>
-                                간편하고 빠르게
-                            </span>
-                            <span className={styles.captionContent}>
-                                Aenean bibendum augue at semper facilisis.<br/>
-                                Quisque egestas dignissim diam, quis rhoncus arcu lectus.
-                            </span><br/>
-                            <FirstButtons />
+                            <div className={styles.captionWrap}>
+                                <span className={styles.captionTitle}>
+                                    IT 행사 참여 · 관리<br/>
+                                    간편하고 빠르게
+                                </span><br/>
+                                <span className={styles.captionContent}>
+                                    Aenean bibendum augue at semper facilisis.<br/>
+                                    Quisque egestas dignissim diam, quis rhoncus arcu lectus.
+                                </span><br/>
+                                <FirstButtons />
+                            </div>
                         </div>
                         <div className={`col-sm ${styles.itemImg}`}>
                             <FirstImg />
@@ -36,15 +38,17 @@ function Main() {
                 <Carousel.Item>
                     <div className={`row ${styles.itemWrap}`}>
                         <div className={`col-sm ${styles.itemCaption}`}>
-                            <span className={styles.captionTitle}>
-                                원하는 방식으로<br/>
-                                간편하게 전환
-                            </span>
-                            <span className={styles.captionContent}>
-                                Aenean bibendum augue at semper facilisis.<br/>
-                                Quisque egestas dignissim diam, quis rhoncus arcu lectus.
-                            </span><br/>
-                            <FirstButtons />
+                            <div className={styles.captionWrap}>
+                                <span className={styles.captionTitle}>
+                                    원하는 방식으로<br/>
+                                    간편하게 전환
+                                </span><br/>
+                                <span className={styles.captionContent}>
+                                    Aenean bibendum augue at semper facilisis.<br/>
+                                    Quisque egestas dignissim diam, quis rhoncus arcu lectus.
+                                </span><br/>
+                                <FirstButtons />
+                            </div>
                         </div>
                         <div className={`col-sm ${styles.itemImg}`}>
                             <img
@@ -57,14 +61,16 @@ function Main() {
                 <Carousel.Item>
                     <div className={`row ${styles.itemWrap}`}>
                         <div className={`col-sm ${styles.itemCaption}`}>
-                            <span className={styles.captionTitle}>
-                                검색도 분류도 빠르게
-                            </span>
-                            <span className={styles.captionContent}>
-                                Aenean bibendum augue at semper facilisis.<br/>
-                                Quisque egestas dignissim diam, quis rhoncus arcu lectus.
-                            </span><br/>
-                            <FirstButtons />
+                            <div className={styles.captionWrap}>
+                                <span className={styles.captionTitle}>
+                                    검색도 분류도 빠르게
+                                </span><br/>
+                                <span className={styles.captionContent}>
+                                    Aenean bibendum augue at semper facilisis.<br/>
+                                    Quisque egestas dignissim diam, quis rhoncus arcu lectus.
+                                </span><br/>
+                                <FirstButtons />
+                            </div>
                         </div>
                         <div className={`col-sm ${styles.itemImg}`}>
                             <img

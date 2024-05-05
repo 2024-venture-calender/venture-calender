@@ -8,8 +8,8 @@ export function FirstButtons() {
   const navigate = useNavigate();
 
   return (
-
-    <div>
+    <>
+        <br/>
         <Button
             className={styles.firstButton}
             variant="outline-dark"
@@ -18,6 +18,6 @@ export function FirstButtons() {
         >
             이벤트 둘러보기
         </Button>
-    </div>
+    </>
   )
 }
