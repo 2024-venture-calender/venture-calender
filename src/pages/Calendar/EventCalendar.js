@@ -16,25 +16,25 @@ const EventCalendar = () => {
 
     return (
         <div className="contentWrap container">
-                <FullCalendar
-                    plugins={[dayGridPlugin, interactionPlugin]}
-                    initialView="dayGridMonth"
-                    locale="ko"
-                    headerToolbar={{
-                        left: 'prev',
-                        center: 'title',
-                        right: 'next'
-                    }}
-                    dayCellContent={(e) => {
-                        return e.dayNumberText.replace('일', '');
-                    }}
-                    events={[
-                        { id: 1, title: '[구름톤유니브] 에프터 파티', start: '2024-05-18' },
-                        { id: 2, title: '[유데미] 백엔드 개발자 취업 미니 부트캠프', start: '2024-05-20', end: '2024-06-21' },
-                        { id: 3, title: '[슈코데이] ML 세미나', start: '2024-01-25' },
-                    ]}
-                    eventClick={handleEventClick}  
-                />
+            <FullCalendar
+                plugins={[dayGridPlugin, interactionPlugin]}
+                initialView="dayGridMonth"
+                locale="ko"
+                headerToolbar={{
+                    left: 'prev',
+                    center: 'title',
+                    right: 'next'
+                }}
+                dayCellContent={(e) => {
+                    return e.dayNumberText.replace('일', '');
+                }}
+                events={[
+                    { id: 1, title: '[구름톤유니브] 에프터 파티', start: '2024-05-18' },
+                    { id: 2, title: '[유데미] 백엔드 개발자 취업 미니 부트캠프', start: '2024-05-20', end: '2024-06-21' },
+                    { id: 3, title: '[슈코데이] ML 세미나', start: '2024-01-25' },
+                ]}
+                eventClick={handleEventClick}  
+            />
         </div>
     );
 };
