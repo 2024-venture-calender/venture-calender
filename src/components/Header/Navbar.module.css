@@ -1,0 +1,25 @@
+.navBar {
+    height: 50px;
+    padding: 0 10%;
+
+    align-items: center;
+}
+
+.navLink {
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+#logoImg {
+    height: 80%;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+    .navBar {
+        height: 40px;
+    }
+}
