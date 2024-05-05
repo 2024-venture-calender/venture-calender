@@ -1,0 +1,25 @@
+.contentWrap {
+  padding: 2% 10%;
+
+}
+
+.fc {
+  min-height: 85vh;
+}
+
+.fc-toolbar-title {
+  font-weight: bold
+}
+
+.fc-scrollgrid a {
+  text-decoration: none;
+  color: black;
+}
+
+.fc-scrollgrid thead a {
+  font-size: 17px;
+}
+
+.fc-scrollgrid .fc-event {
+  cursor: pointer;
+}
