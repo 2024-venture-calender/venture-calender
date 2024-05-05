@@ -1,19 +1,20 @@
 .page {
-    position: absolute;
-	/* top: 0;
-	bottom: 0; */
-	width: 100%;
+	/* width: 100%;
 	max-width: 500px;
     padding: 0 30px;
 
-	left: 50%;
-	transform: translate(-50%, 0);
+	left: 50%; */
 
     background-color: white;
 
-	overflow: hidden;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+
+.pageWrap {
+    max-width: 500px;
+    width: 100%;
 }
 
 .titleWrap {
