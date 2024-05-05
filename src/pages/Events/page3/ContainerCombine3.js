@@ -52,7 +52,7 @@ function ContainerCombine3(){
                     </a>
                 </div>
                 <div className={styles.buttonWrap}>
-                    <a href="https://www.supercoder.co/kr/" className={styles.button}>바로가기</a>
+                    <a href="https://www.supercoder.co/kr/" className={styles.button} target='_blank'>바로가기</a>
                 </div>
             </div>
 

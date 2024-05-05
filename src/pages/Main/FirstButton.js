@@ -13,15 +13,6 @@ export function FirstButtons() {
         <Button
             className={styles.firstButton}
             variant="outline-dark"
-            style={{backgroundColor: 'white', color: 'black'}}
-            onClick={() => navigate('/signup')}
-        >
-            시작하기
-        </Button>
-        &nbsp;
-        <Button
-            className={styles.firstButton}
-            variant="outline-dark"
             style={{backgroundColor: '#28242c', color: 'white'}}
             onClick={() => navigate('/event')}
         >

@@ -4,8 +4,8 @@ import { Carousel, Button } from 'react-bootstrap';
 import styles from './Main.module.css';
 
 import { ReactComponent as FirstImg } from '../../assets/images/main/callog-white.svg';
-import secondImg from '../../assets/images/main/2.jpg';
-import thirdImg from '../../assets/images/main/3.png';
+import secondImg from '../../assets/images/main/EventPage.png';
+import thirdImg from '../../assets/images/main/EventSearch.png';
 
 import {FirstButtons} from './FirstButton';
 

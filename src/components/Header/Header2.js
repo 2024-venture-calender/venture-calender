@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 
-import styles from './Navbar.module.css';
+import styles from './Header.module.css';
+
 import { ReactComponent as LogoImg } from '../../assets/images/header/callog3-white-col.svg';
 
 function Header2() {
