@@ -1,26 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import "./Login.css"
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import "./Login.css";
 
 const User = [
     {
         id: 1,
-        email: 'caesete0524@naver.com',
-        pw: 'ghddud77@'
+        email: 'qwer1234@naver.com',
+        pw: 'qwer1234@@'
     },
     {
         id: 2,
         email: 'park@naver.com',
-        pw: 'park1234@'
+        pw: 'park1234@@'
     },
     {
         id: 3,
         email: 'kim@naver.com',
-        pw: 'kim1234@'
+        pw: 'kim1234@@'
     },
     {
         id: 4,
         email: 'hong@naver.com',
-        pw: 'hong1234@'
+        pw: 'hong1234@@'
     }
 ]
 
@@ -67,10 +68,13 @@ export default function Login() {
 
     // console.log(pass);
 
+    let navigate = useNavigate();
+
     const onClickConfirmButton = () => {
 
         if(pass >= 0) {
-            alert('로그인에 성공했습니다.')
+            alert('로그인에 성공했습니다.');
+            navigate("/");
         } else {
             alert("등록되지 않은 회원입니다.");
         }
@@ -122,7 +126,7 @@ export default function Login() {
 
         <div>
         <button onClick={onClickConfirmButton} disabled={notAllow} className="bottomButton">
-            확인
+            로그인
         </button>
         </div>
     </div>

@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { useRegistDispatch } from './UserContext'; 
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useRegistDispatch } from './UserContext';
+ 
 
 // const User = {
 // email: 'test@example.com',
@@ -74,9 +76,12 @@ export default function Regist() {
         setPhone(e.target.value);
     }
 
+    let navigate = useNavigate();
+
     const onClickConfirmButton = () => {
         console.log(email);
         alert('회원가입에 성공했습니다.');
+        navigate("/login");
     }
 
     return (
