@@ -7,6 +7,8 @@ import Main from './pages/Main/Main';
 import EventCalendar from './pages/EventCalendar/EventCalendar';
 import EventList from './pages/EventList/EventList';
 import EventDetails from './pages/Events/EventDetails';
+// import Login from './pages/User/Login';
+// import Regist from './pages/User/Register';
 
 const Router = () => {
     return (
