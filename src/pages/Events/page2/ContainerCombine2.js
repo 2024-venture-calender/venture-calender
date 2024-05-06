@@ -151,7 +151,7 @@ function ContainerCombine2(){
                 
                 `}
             </div>
-            <Map />
+            
         </div>
     );
 }
