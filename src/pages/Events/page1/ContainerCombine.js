@@ -51,7 +51,7 @@ function ContainerCombine(){
                     </a>
                 </div>
                 <div className={styles.buttonWrap}>
-                    <a href="https://goorm-square.oopy.io/" className={styles.button}>바로가기</a>
+                    <a href="https://goorm-square.oopy.io/" className={styles.button} target='_blank'>바로가기</a>
                 </div>
             </div>
 

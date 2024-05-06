@@ -8,17 +8,8 @@ export function FirstButtons() {
   const navigate = useNavigate();
 
   return (
-
-    <div>
-        <Button
-            className={styles.firstButton}
-            variant="outline-dark"
-            style={{backgroundColor: 'white', color: 'black'}}
-            onClick={() => navigate('/signup')}
-        >
-            시작하기
-        </Button>
-        &nbsp;
+    <>
+        <br/>
         <Button
             className={styles.firstButton}
             variant="outline-dark"
@@ -27,6 +18,6 @@ export function FirstButtons() {
         >
             이벤트 둘러보기
         </Button>
-    </div>
+    </>
   )
 }
